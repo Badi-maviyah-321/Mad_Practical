@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Primary Colors - Dark Blue -->
+    <color name="primary">#0D47A1</color>
+    <color name="primary_dark">#002171</color>
+    <color name="primary_light">#5472D3</color>
+    <color name="on_primary">#FFFFFF</color>
+
+    <!-- Secondary Colors - Purple -->
+    <color name="secondary">#7B1FA2</color>
+    <color name="secondary_dark">#4B0082</color>
+    <color name="secondary_light">#AE52D4</color>
+    <color name="on_secondary">#FFFFFF</color>
+
+    <!-- Neutral Colors -->
+    <color name="background">#F5F5F5</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="on_background">#121212</color>
+    <color name="on_surface">#121212</color>
+
+    <!-- Feedback Colors -->
+    <color name="error">#B00020</color>
+    <color name="success">#388E3C</color>
+    <color name="warning">#F9A825</color>
+</resources>
