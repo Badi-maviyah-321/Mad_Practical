@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/appBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_shield"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:contentDescription="Shield Icon"
+            app:tint="@color/primaryBlue"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tenant Portal"
+            android:textColor="@color/textPrimary"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login with your System ID"
+            android:textColor="@color/textSecondary"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp"/>
+
+        <EditText
+            android:id="@+id/etTenantId"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="System ID (e.g. 202503170001)"
+            android:inputType="number"
+            android:textColorHint="@color/textSecondary"
+            android:background="@drawable/bg_input_field"
+            android:textColor="@color/textPrimary"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/etTenantPassword"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/textSecondary"
+            android:background="@drawable/bg_input_field"
+            android:textColor="@color/textPrimary"
+            android:padding="16dp"
+            android:layout_marginBottom="32dp"/>
+
+        <Button
+            android:id="@+id/btnTenantLogin"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button"/>
+
+        <TextView
+            android:id="@+id/tvBackToMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go Back"
+            android:textColor="@color/primaryBlue"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="center"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+</ScrollView>

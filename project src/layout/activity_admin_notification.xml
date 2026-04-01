@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/appBackground"
+            app:title="Send Notification"
+            app:titleTextColor="@color/textPrimary"
+            app:navigationIcon="?attr/homeAsUpIndicator" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/cardBackground"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MESSAGE DETAILS"
+                        android:textColor="@color/textSecondary"
+                        android:textSize="10sp"
+                        android:letterSpacing="0.1"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="16dp"/>
+
+                    <EditText
+                        android:id="@+id/etNotifTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:hint="Title (e.g. Rent Reminder)"
+                        android:paddingHorizontal="16dp"
+                        android:background="@drawable/bg_input_dark"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/textSecondary"
+                        android:layout_marginBottom="16dp"
+                        android:inputType="textCapSentences"/>
+
+                    <EditText
+                        android:id="@+id/etNotifMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:hint="Write your message here..."
+                        android:padding="16dp"
+                        android:background="@drawable/bg_input_dark"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/textSecondary"
+                        android:layout_marginBottom="24dp"
+                        android:gravity="top"
+                        android:inputType="textMultiLine"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TARGET AUDIENCE"
+                        android:textColor="@color/textSecondary"
+                        android:textSize="10sp"
+                        android:letterSpacing="0.1"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="12dp"/>
+
+                    <com.google.android.material.button.MaterialButtonToggleGroup
+                        android:id="@+id/toggleTarget"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        app:singleSelection="true"
+                        app:checkedButton="@+id/btnTargetAll">
+                        <Button
+                            android:id="@+id/btnTargetAll"
+                            style="?attr/materialButtonOutlinedStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="All Tenants" />
+                        <Button
+                            android:id="@+id/btnTargetSpecific"
+                            style="?attr/materialButtonOutlinedStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Specific Tenant" />
+                    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+                    <Spinner
+                        android:id="@+id/spinnerTenants"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginBottom="32dp"
+                        android:background="@drawable/bg_input_dark"
+                        android:visibility="gone"/>
+
+                    <Button
+                        android:id="@+id/btnSendNotif"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:text="Broadcast Notification"
+                        android:textAllCaps="false"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/primaryBlue"
+                        app:cornerRadius="16dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

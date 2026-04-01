@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark Mode Overrides -->
+    <color name="appBackground">#0F172A</color>
+    <color name="cardBackground">#1E293B</color>
+    <color name="textPrimary">#F8FAFC</color>
+    <color name="textSecondary">#94A3B8</color>
+    <color name="inputBackground">#334155</color>
+    <color name="navItemColor">#94A3B8</color>
+    <color name="dividerColor">#334155</color>
+</resources>

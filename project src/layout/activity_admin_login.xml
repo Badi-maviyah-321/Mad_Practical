@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/appBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RRMS"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryBlue"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Property Admin Portal"
+            android:textSize="18sp"
+            android:textColor="@color/textSecondary"
+            android:layout_gravity="center"
+            android:layout_marginBottom="48dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="@color/textPrimary"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:hint="Enter admin username"
+            android:textColorHint="@color/textSecondary"
+            android:textColor="@color/textPrimary"
+            android:background="@drawable/bg_input_field"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:inputType="text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="@color/textPrimary"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:hint="Enter password"
+            android:textColorHint="@color/textSecondary"
+            android:textColor="@color/textPrimary"
+            android:inputType="textPassword"
+            android:background="@drawable/bg_input_field"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:text="Login as Admin →"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button"
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"/>
+
+        <TextView
+            android:id="@+id/tvTenantLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Are you a Tenant? Click here to Login"
+            android:textColor="@color/primaryBlue"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="center"
+            android:padding="8dp"/>
+    </LinearLayout>
+</ScrollView>

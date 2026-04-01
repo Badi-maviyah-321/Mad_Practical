@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Blue Background -->
+    <path
+        android:fillColor="#0078D4"
+        android:pathData="M0,0 h100 v100 h-100 z" />
+    <!-- White House -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,20 L20,45 L20,80 L40,80 L40,60 L60,60 L60,80 L80,80 L80,45 L50,20 Z" />
+</vector>

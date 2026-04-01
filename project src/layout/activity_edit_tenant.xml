@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBackground">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/darkBackground"
+            app:title="Edit Tenant"
+            app:titleTextColor="@color/white"
+            app:navigationIcon="?attr/homeAsUpIndicator" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update Tenant Information"
+                android:textColor="@color/grayText"
+                android:textSize="14sp"
+                android:layout_marginBottom="24dp"/>
+
+            <EditText
+                android:id="@+id/etEditName"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Full Name"
+                android:padding="16dp"
+                android:background="@drawable/bg_input_field"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grayText"
+                android:layout_marginBottom="16dp"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etEditPhone"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Phone Number"
+                android:padding="16dp"
+                android:background="@drawable/bg_input_field"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grayText"
+                android:layout_marginBottom="16dp"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/etEditRoom"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Room Number"
+                android:padding="16dp"
+                android:background="@drawable/bg_input_field"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grayText"
+                android:layout_marginBottom="16dp"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etEditRent"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Monthly Rent (₹)"
+                android:padding="16dp"
+                android:background="@drawable/bg_input_field"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grayText"
+                android:layout_marginBottom="16dp"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/etEditDeposit"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Security Deposit (₹)"
+                android:padding="16dp"
+                android:background="@drawable/bg_input_field"
+                android:textColor="@color/white"
+                android:textColorHint="@color/grayText"
+                android:layout_marginBottom="32dp"
+                android:inputType="numberDecimal" />
+
+            <Button
+                android:id="@+id/btnUpdateTenant"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_button"
+                android:text="Update Tenant"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
